@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LadriLab - Generador</title>
+<link rel="stylesheet" href="styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<style type="text/css">
+  
+    body {
+    font-family: 'Montserrat', sans-serif;
+     margin: 0;
+      padding: 0;
+      display: flex; /* Hace que los elementos hijos se comporten como flexbox */
+      flex-direction: column; /* Coloca los elementos hijos en una columna */
+      min-height: 100vh; /* Asegura que el cuerpo tenga al menos el 100% de la altura de la ventana gráfica del navegador */
+    }
+
+
+    /* Style the navbar with matte black background and bone white text */
+.navbar {
+    background-color: #272727;
+    color: #E5E5E5;
+    padding: 10px 0;
+    height: 40px; /* Fixed height for the navbar (adjust as needed) */
+}
+
+/* Center the content within the navbar */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px; /* Add left padding to create spacing */
+}
+
+/* Style the page name on the left */
+.navbar-brand a {
+    font-size: 24px; /* Font size for the page name */
+    text-decoration: none; /* Remove underlines from the link */
+    color: #E5E5E5; /* Bone white text color for the page name */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Style the navigation options on the right */
+.navbar-menu {
+    list-style-type: none; /* Remove bullet points from the list */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-menu li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 60px; /* Spacing between menu items (adjust as needed) */
+}
+
+/* Style the links in the menu */
+.navbar-menu a {
+    text-decoration: none; /* Remove underlines from the links */
+    color: #E5E5E5; /* Bone white text color for the links */
+    font-weight: bold; /* Make the links bold (adjust as needed) */
+    font-size: 16px; /* Font size for the links */
+}
+
+    main {
+      display: flex;
+      flex: 1;
+    }
+    .seccion {
+    flex: 1;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      height: 590px; /* Ajusta la altura según tus necesidades (puedes usar px, %, vh, etc.) */
+    }
+
+.seccion button {
+
+  font-size: 8.5px;
+  font-weight: bold;
+  text-align: center;
+margin-left: 150px;
+      margin-top: 300px; /* Espaciado superior al botón */
+      padding: 10px; /* Espaciado interno del botón */
+      background-color: #D9D9D9; /* Color de fondo del botón */
+      color: #728DD2; /* Color del texto del botón */
+      border: none; /* Sin borde */
+      border-radius: 50px; /* Bordes redondeados */
+      cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+      width: 50px;
+      height: 50px;
+    }
+     .seccion:nth-child(1) {
+      background-color: #E2EB79; /* Color para la primera sección */
+    }
+
+    .seccion:nth-child(2) {
+      background-color: #FB9999; /* Color para la segunda sección */
+    }
+
+    .seccion:nth-child(3) {
+      background-color: #87D7E8; /* Color para la tercera sección */
+    }
+
+
+
+ /* Style the footer with matte black background and bone white text */
+footer {
+    background-color: #272727;
+    color: #E5E5E5;
+    padding: 10px 0;
+    height: 50px; /* Fixed height for the footer (adjust as needed) */
+    display: flex;
+    justify-content: space-between; /* Separate content on the left and right */
+    align-items: center;
+}
+
+/* Style the left side of the credits */
+.left {
+    flex: 1; /* Take up equal space on the left side */
+    text-align: left;
+    padding-left: 20px; /* Add left padding */
+}
+
+/* Style the right side of the credits */
+.right {
+    flex: 1; /* Take up equal space on the right side */
+    text-align: right;
+    padding-right: 20px; /* Add right padding */
+}
+  </style>
+  <title>Tres Secciones con Barra de Navegación y Footer</title>
+</head>
+<body>
+
+  <header>
+<nav class="navbar">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/">LadriLab</a>
+        </div>
+        <ul class="navbar-menu">
+            <li><a href="/Descargar">Descargar</a></li>
+        </ul>
+    </div>
+</nav>
+  </header>
+
+
+  <main>
+    <div class="seccion">
+      <!-- Contenido de la primera sección -->
+      <h2>PERRO 1</h2>
+      <p> Contenido de la primera sección...</p>
+       <button onclick="alert('¡Haz clic en la sección 1!')">CABEZA</button>
+      </div>
+    </div>
+    <div class="seccion">
+      <!-- Contenido de la segunda sección -->
+      <h2>PERRO 2</h2>
+      <p>Contenido de la segunda sección...</p>
+      <button onclick="alert('¡Haz clic en la sección 2!')">TORSO</button>
+    </div>
+    <div class="seccion">
+      <!-- Contenido de la tercera sección -->
+      <h2>PERRO 3</h2>
+      <p>Contenido de la tercera sección...</p>
+       <button onclick="alert('¡Haz clic en la sección 3!')">COLA</button>
+    </div>
+  </main>
+
+
+<!-- Comienzo del Footer -->
+
+<footer>
+    <p class="left">Proyecto Web para Programación Creativa</p>
+    <p class="right">Escuela de Diseño UC, Pontificia Universidad Católica de Chile</p>
+</footer>
+</body>
+</html>
